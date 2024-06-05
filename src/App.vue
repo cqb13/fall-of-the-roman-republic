@@ -97,7 +97,7 @@ const isMobile = () => {
       <div
         class="w-96 h-8 rounded-2xl bg-primary my-5 flex items-center justify-center max-sm:w-80"
       >
-        <p class="font-medium text-lg">{{ group.year }}</p>
+        <p class="font-medium text-lg">{{ group.year }} BCE</p>
       </div>
       <section
         v-for="event in group.events"
@@ -140,7 +140,7 @@ const isMobile = () => {
               :style="[`background-color: ${group.color};`]"
             >
               <div class="bg-background rounded-full w-4 h-4" />
-              <p class="">{{ event.date }}</p>
+              <p class="">{{ `${event.additionalDate ? event.additionalDate : ""} ${event.date}` }}</p>
             </div>
             <p></p>
           </div>
