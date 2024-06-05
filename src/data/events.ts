@@ -28,6 +28,19 @@ const events: Event[] = [
     ],
   },
   {
+    name: "Gaius Gracchus was born",
+    description: "",
+    date: "154 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Eugene_Guillaume_-_the_Gracchi_%28cropped%29_Gaius.jpg/330px-Eugene_Guillaume_-_the_Gracchi_%28cropped%29_Gaius.jpg",
+    link: [
+      {
+        url: "https://en.wikipedia.org/wiki/Gaius_Gracchus",
+        name: "wikipedia/Gaius_Gracchus",
+      },
+    ],
+  },
+  {
     name: "Roman defeat at Numantia",
     description:
       "As quaestor Tiberius Gracchus played a critical role in a major roman defeat at Numantia.",
@@ -43,7 +56,7 @@ const events: Event[] = [
   {
     name: "Tiberius Gracchus' land reform",
     description:
-      "Tiberius Gracchus proposed the Lex Agraria, a law aimed at redistributing public land to benefit the middle and lower classes. The goal was to increase the number of land-owning citizens, which in turn would increase the pool of eligible soldiers. This was a response to the growing inequality in Roman society. The law was passed, but it was not enforced, leading to further unrest.",
+      "Tiberius Gracchus proposed the Lex Agraria, a law aimed at redistributing public land to benefit the middle and lower classes. The goal was to increase the number of land-owning citizens, which in turn would increase the pool of eligible soldiers. This was a response to the growing inequality in Roman society.",
     date: "133 BCE",
   },
   {
@@ -58,6 +71,64 @@ const events: Event[] = [
       "Tiberius and about 300 of his supporters were killed in a violent confrontation initiated by a group of senators led by Scipio Nasica. This marked the beginning of a series of violent political conflicts that ultimately contributed to the fall of the Roman Republic. The attack took place during an electoral assembly, signaling a breakdown in traditional Roman political processes.",
     date: "133 BCE",
     image: "https://farm9.staticflickr.com/8126/8637277265_e653c6364c_z.jpg",
+  },
+  {
+    name: "Formation of Populares and Optimates",
+    description:
+      "The assassination of Tiberius Gracchus led to the formation of two political factions in Rome: the Populares, who supported the interests of the people, and the Optimates, who represented the interests of the aristocracy. These factions would play a significant role in the political conflicts that followed.",
+    date: "133 BCE",
+  },
+  {
+    name: "Gaius Gracchus supports non-Roman citizens",
+    description:
+      "Gaius Gracchus opposed a proposed law which would prohibit non-citizens from settling in Roman towns and evict those who had done so.",
+    date: "126 BCE",
+    link: [
+      {
+        url: "https://en.wikipedia.org/wiki/Gaius_Gracchus",
+        name: "wikipedia/Gaius_Gracchus",
+      },
+    ],
+  },
+  {
+    name: "Gaius Gracchus was elected quaestor",
+    description:
+      "Gaius was elected quaestor and assigned to the Roman province of Sardinia.",
+    date: "126 BCE",
+    link: [
+      {
+        url: "https://en.wikipedia.org/wiki/Gaius_Gracchus",
+        name: "wikipedia/Gaius_Gracchus",
+      },
+    ],
+  },
+  {
+    name: "Gaius Gracchus elected Tribune of the Plebs",
+    description:
+      "Gaius Gracchus, the younger brother of Tiberius Gracchus, is elected as a tribune of the plebs. ",
+    date: "123 BCE",
+  },
+  {
+    name: "First Tribunate of Gaius Gracchus",
+    description:
+      "Gaius started his political career as part of the commission implementing the agrarian reforms initiated by his brother Tiberius. This commission aimed to redistribute public land to Rome's poorer citizens, increasing the number of small landowners. He continued the focus on land reforms by planning and establishing colonies in Italy and re-founding Carthage, aiming to provide land for Rome’s landless citizens. He introduced significant judicial reforms, including the establishment of a permanent court (quaestio de repetundis) to handle cases of extortion by provincial governors. He transferred jury duties from senators to equestrians, seeking to curb corruption. He also implemented a law providing the urban poor with a regular grain supply at subsidized prices, addressing the critical issue of food security in Rome.",
+    date: "123 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Gaius_Gracchus_Tribune_of_the_People.jpg/450px-Gaius_Gracchus_Tribune_of_the_People.jpg",
+  },
+  {
+    name: "Second Tribunate of Gaius Gracchus",
+    description:
+      "Gaius continued passing laws to help the poor citizens of Rome.",
+    date: "122 BCE",
+  },
+  {
+    name: "Gaius Gracchus is killed",
+    description:
+      "Gaius Gracchus and his supporters were killed in a violent confrontation with a group of senators and their supporters. Gaius' death marked the beginning of a period of political instability and violence in Rome.",
+    date: "121 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Death_of_Gaius_Gracchus.jpg/450px-Death_of_Gaius_Gracchus.jpg",
   },
 ];
 
