@@ -217,7 +217,7 @@ const isMobile = () => {
     </div>
   </section>
   <footer class="flex justify-between px-4 py-2 text-sm shrink-0 bg-background">
-    <p>Civic Movement Timeline | © 2024</p>
+    <p>The Fall of the Roman Republic | © 2024</p>
     <a href="https://github.com/cqb13" target="_blank"
       >Created by Maksim Straus</a
     >
