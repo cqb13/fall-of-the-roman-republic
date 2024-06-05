@@ -27,6 +27,8 @@ const groupEvents = () => {
   let currentYearGroup: YearGroup = { year: "", color: "", events: [] };
   let currentColor = 3; // to start at first color
 
+  console.log(events.length);
+
   events.forEach((timelineEvent) => {
     const year = timelineEvent.date.replace(" BCE", "").replace(" CE", "");
 

@@ -28,6 +28,17 @@ const events: Event[] = [
     ],
   },
   {
+    name: "Gaius Marius was born",
+    description: "",
+    date: "157 BCE",
+    link: [
+      {
+        url: "https://en.wikipedia.org/wiki/Gaius_Marius",
+        name: "wikipedia/Gaius_Marius",
+      },
+    ],
+  },
+  {
     name: "Gaius Gracchus was born",
     description: "",
     date: "154 BCE",
@@ -129,6 +140,46 @@ const events: Event[] = [
     date: "121 BCE",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Death_of_Gaius_Gracchus.jpg/450px-Death_of_Gaius_Gracchus.jpg",
+  },
+  {
+    name: "Germanic tribes invade Roman territory",
+    description:
+      "Germanic tribes crossed into Roman territory and defeated Roman armies.",
+    date: "113 BCE",
+  },
+  {
+    name: "Gaius Marius gained consulship",
+    description:
+      "Gaius gained the consulship by as a result of the war against Jugurtha, king of Numidia.",
+    date: "107 BCE",
+  },
+  {
+    name: "Consecutive consulships of Gaius Marius",
+    description:
+      "Gaius was elected consul and given the office for five consecutive years. While in power he made significant changes to the Roman military, like removing the requirement to own your own equipment, creating a standing army by enlisting people for 16 years, and improving Roman military structures by adding more cavalry, improving formations, and upgrading equipment.",
+    date: "104 BCE",
+  },
+  {
+    name: "Veterans get land",
+    description:
+      "With the help of Lucii Appulei Saturnini, Gaius Marius gave land to the soldiers who had completed military service.",
+    date: "103 BCE",
+  },
+  {
+    name: "Teutones are defeated the at Aquae Sextiae.",
+    description: "Helped secure Rome from the Germanic tribes.",
+    date: "102 BCE",
+  },
+  {
+    name: "Cimbri are defeated at Vercellae.",
+    description: "Secured Rome from the Germanic tribes.",
+    date: "101 BCE",
+  },
+  {
+    name: "Gaius Marius died",
+    description: "",
+    date: "86 BCE",
+    additionalDate: "January 13th,",
   },
 ];
 
