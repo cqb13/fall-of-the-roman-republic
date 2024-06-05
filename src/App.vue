@@ -127,9 +127,12 @@ const isMobile = () => {
               <div class="mb-2">
                 <span v-if="event.link">
                   Links:
-                  <a v-for="link in event.link" :href="link" target="_blank">{{
-                    link
-                  }}</a>
+                  <a
+                    v-for="link in event.link"
+                    :href="link.url"
+                    target="_blank"
+                    >{{ link.name }}</a
+                  >
                 </span>
               </div>
             </div>
@@ -140,7 +143,13 @@ const isMobile = () => {
               :style="[`background-color: ${group.color};`]"
             >
               <div class="bg-background rounded-full w-4 h-4" />
-              <p class="">{{ `${event.additionalDate ? event.additionalDate : ""} ${event.date}` }}</p>
+              <p class="">
+                {{
+                  `${event.additionalDate ? event.additionalDate : ""} ${
+                    event.date
+                  }`
+                }}
+              </p>
             </div>
             <p></p>
           </div>
@@ -158,8 +167,14 @@ const isMobile = () => {
               class="rounded-3xl py-2 pl-4 pr-3 flex justify-between items-center gap-4"
               :style="[`background-color: ${group.color};`]"
             >
-              <div class="bg-background rounded-full w-4 h-4 md:hidden" />
-              <p class="">{{ event.date }}</p>
+              <div class="bg-background rounded-full w-4 h-4" />
+              <p class="">
+                {{
+                  `${event.additionalDate ? event.additionalDate : ""} ${
+                    event.date
+                  }`
+                }}
+              </p>
               <div class="bg-background rounded-full w-4 h-4 max-md:hidden" />
             </div>
           </div>
@@ -186,9 +201,12 @@ const isMobile = () => {
               <div class="mb-2">
                 <span v-if="event.link">
                   Links:
-                  <a v-for="link in event.link" :href="link" target="_blank">{{
-                    link
-                  }}</a>
+                  <a
+                    v-for="link in event.link"
+                    :href="link.url"
+                    target="_blank"
+                    >{{ link.name }}</a
+                  >
                 </span>
               </div>
             </div>
