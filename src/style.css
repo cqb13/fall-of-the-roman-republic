@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Tiro%20Telugu:700|Tiro%20Telugu:400');
+
+body::-webkit-scrollbar {
+  display: none;
+}
