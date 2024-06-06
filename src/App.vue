@@ -187,7 +187,6 @@ window.addEventListener("scroll", () => {
               class="rounded-3xl py-2 pl-4 pr-3 flex justify-between items-center gap-4"
               :style="[`background-color: ${group.color};`]"
             >
-              <div class="bg-background rounded-full w-4 h-4" />
               <p class="">
                 {{
                   `${event.additionalDate ? event.additionalDate : ""} ${

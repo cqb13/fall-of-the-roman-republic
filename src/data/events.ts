@@ -184,6 +184,20 @@ const events: Event[] = [
       "Romans feared that upon returning to Rome, Pompey would use his army to take control of the city. However, when Pompey landed in Brundisium, he dismissed his troops and returned to Rome peacefully.",
     date: "62 BCE",
   },
+  {
+    name: "The First Triumvirate",
+    description:
+      "Pompey, Crassus, and Caesar came together to form the First Triumvirate, a political alliance that allowed them to consolidate power and influence in Rome. The alliance was not officially recognized by the Roman Senate, but it effectively controlled Roman politics for several years. The First Triumvirate was a significant development in Roman history, as it marked the beginning of the end of the Roman Republic and the rise of autocratic rule.",
+    date: "60 BCE",
+  },
+  {
+    name: "Conference at Luca",
+    description:
+      "The members of the First Triumvirate met in Luca to discuss their political strategies and goals. The conference solidified the territories which each member would control, with Caesar being given Gaul, Pompey being given Spain, and Crassus being given Syria.",
+    date: "56 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/First_triumvirate_luca56bc.svg/1920px-First_triumvirate_luca56bc.svg.png",
+  },
 ];
 
 export default events;
