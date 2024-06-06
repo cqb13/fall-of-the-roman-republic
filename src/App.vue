@@ -75,6 +75,16 @@ const isMobile = () => {
     return window.innerWidth < 768;
   }
 };
+
+let scrollProgress = ref(0);
+
+window.addEventListener("scroll", () => {
+  var winScroll = document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  scrollProgress.value = (winScroll / height) * 100;
+});
 </script>
 
 <template>
@@ -85,6 +95,14 @@ const isMobile = () => {
       </h1>
     </section>
   </header>
+  <div
+    :class="[
+      `bg-primary-800 opacity-50 h-4 fixed left-0 z-10 top-0 ${
+        scrollProgress >= 99.9 ? '' : 'rounded-br-lg'
+      }`,
+    ]"
+    :style="[`width: ${scrollProgress}%;`]"
+  />
   <main
     class="relative top-14 w-8/12 m-auto mb-32 p-4 flex flex-col items-center max-xl:w-10/12 max-md:w-full"
   >
