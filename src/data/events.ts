@@ -15,12 +15,6 @@ type Link = {
 
 const events: Event[] = [
   {
-    name: "Roman defeat at Numantia",
-    description:
-      "As quaestor Tiberius Gracchus played a critical role in a major roman defeat at Numantia.",
-    date: "137 BCE",
-  },
-  {
     name: "Tiberius Gracchus elected Tribune of the Plebs",
     description:
       "Tiberius Gracchus, a Roman politician, is elected as a tribune of the plebs. He will go on to propose a series of land reforms that will lead to his assassination.",
@@ -137,12 +131,58 @@ const events: Event[] = [
     name: "Cimbri are defeated at Vercellae.",
     description: "Secured Rome from the Germanic tribes.",
     date: "101 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mario_vincitore_dei_Cimbri.jpg/330px-Mario_vincitore_dei_Cimbri.jpg",
   },
   {
-    name: "Gaius Marius died",
-    description: "",
-    date: "86 BCE",
-    additionalDate: "January 13th,",
+    name: "Mithridates VI threatens Roman territory",
+    description:
+      "Mithridates VI killed 80,000 Roman citizens living in Greece and Asia Minor",
+    date: "90 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Asia_minor_Mithridates.jpg/600px-Asia_minor_Mithridates.jpg",
+  },
+  {
+    name: "Sulla Marches on Rome",
+    description:
+      "Sulla marched on Rome with his army, against the senate, as he wished to have control over the champaign against Mithridates VI. Sulla was able to seize the governance of Rome and caused Gaius Marius to flee to Africa. Sulla became most well known for his use of physical force to obtain political power.",
+    date: "88 BCE",
+  },
+  {
+    name: "Sulla declares himself dictator",
+    description:
+      "Sulla made a second journey through the gates of Rome, declaring himself dictator. Sulla created a list of rivals who he declared enemies of the Republic, and ordered Romans to kill the people on the list. Additionally he decreased the power of the tribune of the plebs by taking their veto power and preventing them from running for offices again, and increased the power of the senate, by adding 300 senators and giving them the governance of judges.",
+    date: "82 BCE",
+  },
+  {
+    name: "Pompey is Victorious",
+    description:
+      "Pompey returns to Rome from his command in Spain after defeating Quintus Sertorius.",
+    date: "71 BCE",
+  },
+  {
+    name: "Pompey becomes consul",
+    description:
+      "Pompey and Crassus joined forces to run for consulship. Pompey is able to reach the highest office without serving in the senate.",
+    date: "70 BCE",
+  },
+  {
+    name: "Pompey's reforms",
+    description:
+      "Pompey and Crassus reverted many of Sulla's major reforms, including restoring the power of the tribune of the plebs, electing censors who were able to expel 64 unfit senators, settled the battle over who should serve as jurymen in the courts in compromise.",
+    date: "70 BCE",
+  },
+  {
+    name: "Pompey proposes the Lex Gabinia",
+    description:
+      "Pompey proposed the Lex Gabinia, which gave him control over costal regions and allowed him to successfully fight piracy, putting the Mediterranean Sea into Roman control.",
+    date: "67 BCE",
+  },
+  {
+    name: "Pompey dismisses his troops",
+    description:
+      "Romans feared that upon returning to Rome, Pompey would use his army to take control of the city. However, when Pompey landed in Brundisium, he dismissed his troops and returned to Rome peacefully.",
+    date: "62 BCE",
   },
 ];
 
