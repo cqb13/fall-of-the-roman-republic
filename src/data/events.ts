@@ -15,43 +15,6 @@ type Link = {
 
 const events: Event[] = [
   {
-    name: "Tiberius Gracchus was born",
-    description: "",
-    date: "163 BCE",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Eugene_Guillaume_-_the_Gracchi_%28cropped%29.jpg/800px-Eugene_Guillaume_-_the_Gracchi_%28cropped%29.jpg",
-    link: [
-      {
-        url: "https://en.wikipedia.org/wiki/Tiberius_Gracchus",
-        name: "wikipedia/Tiberius_Gracchus",
-      },
-    ],
-  },
-  {
-    name: "Gaius Marius was born",
-    description: "",
-    date: "157 BCE",
-    link: [
-      {
-        url: "https://en.wikipedia.org/wiki/Gaius_Marius",
-        name: "wikipedia/Gaius_Marius",
-      },
-    ],
-  },
-  {
-    name: "Gaius Gracchus was born",
-    description: "",
-    date: "154 BCE",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Eugene_Guillaume_-_the_Gracchi_%28cropped%29_Gaius.jpg/330px-Eugene_Guillaume_-_the_Gracchi_%28cropped%29_Gaius.jpg",
-    link: [
-      {
-        url: "https://en.wikipedia.org/wiki/Gaius_Gracchus",
-        name: "wikipedia/Gaius_Gracchus",
-      },
-    ],
-  },
-  {
     name: "Roman defeat at Numantia",
     description:
       "As quaestor Tiberius Gracchus played a critical role in a major roman defeat at Numantia.",
