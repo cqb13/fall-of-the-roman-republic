@@ -214,6 +214,7 @@ const events: Event[] = [
     description:
       "Caesar is assassinated by a group of senators, led by Brutus and Cassius. The assassination was motivated by fears that Caesar was becoming too powerful and would undermine the Roman Republic. This event marked the end of the Roman Republic and the beginning of the Roman Empire.",
     date: "44 BCE",
+    additionalDate: "March 15th,",
   },
 ];
 
