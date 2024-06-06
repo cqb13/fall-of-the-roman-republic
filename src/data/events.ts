@@ -147,6 +147,8 @@ const events: Event[] = [
     description:
       "Sulla marched on Rome with his army, against the senate, as he wished to have control over the champaign against Mithridates VI. Sulla was able to seize the governance of Rome and caused Gaius Marius to flee to Africa. Sulla became most well known for his use of physical force to obtain political power.",
     date: "88 BCE",
+    image:
+      "https://miro.medium.com/v2/resize:fit:900/1*7Yy1a17PQmWn0NRKA-1OXw.jpeg",
   },
   {
     name: "Sulla declares himself dictator",
@@ -189,6 +191,8 @@ const events: Event[] = [
     description:
       "Pompey, Crassus, and Caesar came together to form the First Triumvirate, a political alliance that allowed them to consolidate power and influence in Rome. The alliance was not officially recognized by the Roman Senate, but it effectively controlled Roman politics for several years. The First Triumvirate was a significant development in Roman history, as it marked the beginning of the end of the Roman Republic and the rise of autocratic rule.",
     date: "60 BCE",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/The_First_Triumvirate_of_the_Roman_Republic_1200X800.jpg",
   },
   {
     name: "Conference at Luca",
@@ -203,6 +207,9 @@ const events: Event[] = [
     description:
       "Caesar crossed the Rubicon with his army, Pompey fled Rome as Caesar got closer to Rome. This marked the beginning of the civil war between Caesar and Pompey.",
     date: "49 BCE",
+    image:
+      "https://characterlab.org/wp-content/uploads/2022/03/4-3-22-All-In_web-1024x759.png",
+    additionalDate: "January 10th,",
   },
   {
     name: "Caesar declares himself dictator",
@@ -215,6 +222,8 @@ const events: Event[] = [
       "Caesar is assassinated by a group of senators, led by Brutus and Cassius. The assassination was motivated by fears that Caesar was becoming too powerful and would undermine the Roman Republic. This event marked the end of the Roman Republic and the beginning of the Roman Empire.",
     date: "44 BCE",
     additionalDate: "March 15th,",
+    image:
+      "https://www.thoughtco.com/thmb/2G10ck7ajVt1fnvN124Q9mhDJT4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/death-of-julius-caesar-1805-1806-by-vincenzo-camuccini-1771-1844-oil-on-canvas-400x707-cm-165533961-57b4900f5f9b58b5c2c5cf7a.jpg",
   },
 ];
 
