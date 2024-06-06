@@ -198,6 +198,23 @@ const events: Event[] = [
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/First_triumvirate_luca56bc.svg/1920px-First_triumvirate_luca56bc.svg.png",
   },
+  {
+    name: "Caesar crosses the Rubicon",
+    description:
+      "Caesar crossed the Rubicon with his army, Pompey fled Rome as Caesar got closer to Rome. This marked the beginning of the civil war between Caesar and Pompey.",
+    date: "49 BCE",
+  },
+  {
+    name: "Caesar declares himself dictator",
+    description: "Caesar declared himself dictator for life.",
+    date: "44 BCE",
+  },
+  {
+    name: "Caesar is assassinated",
+    description:
+      "Caesar is assassinated by a group of senators, led by Brutus and Cassius. The assassination was motivated by fears that Caesar was becoming too powerful and would undermine the Roman Republic. This event marked the end of the Roman Republic and the beginning of the Roman Empire.",
+    date: "44 BCE",
+  },
 ];
 
 export default events;
