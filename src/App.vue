@@ -272,24 +272,59 @@ window.addEventListener("scroll", () => {
   >
     <button
       @click="flip"
-      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center active:bg-primary-700 transition-all duration-200 ease-in-out hover:bg-primary-900"
     >
-      flip
+      <svg
+        width="20px"
+        height="20px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="fill-background-50"
+      >
+        <path
+          d="M6.293 4.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1-1.414 1.414L8 7.414V19a1 1 0 1 1-2 0V7.414L3.707 9.707a1 1 0 0 1-1.414-1.414l4-4zM16 16.586V5a1 1 0 1 1 2 0v11.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L16 16.586z"
+        />
+      </svg>
     </button>
     <button
       @click="toTop"
-      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center active:bg-primary-700 transition-all duration-200 ease-in-out hover:bg-primary-900"
     >
-      to top
+      <svg
+        fill="none"
+        width="20px"
+        height="20px"
+        viewBox="-5 -7.5 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMinYMin"
+        class="fill-background-50"
+      >
+        <path
+          d="M7.071 2.828l-4.95 4.95A1 1 0 0 1 .707 6.364L6.364.707a1 1 0 0 1 1.414 0l5.657 5.657a1 1 0 0 1-1.414 1.414l-4.95-4.95z"
+        />
+      </svg>
     </button>
     <button
       @click="toBottom"
-      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center active:bg-primary-700 transition-all duration-200 ease-in-out hover:bg-primary-900"
     >
-      to bottom
+      <svg
+        fill="none"
+        width="20px"
+        height="20px"
+        viewBox="-5 -8 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMinYMin"
+        class="fill-background-50"
+      >
+        <path
+          d="M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z"
+        />
+      </svg>
     </button>
   </section>
-  <footer class="flex justify-between px-4 py-2 text-sm shrink-0 bg-background">
+  <footer class="flex justify-between px-4 py-2 text-sm shrink-0">
     <p>The Fall of the Roman Republic | © 2024</p>
     <a href="https://github.com/cqb13" target="_blank"
       >Created by Maksim Straus</a
