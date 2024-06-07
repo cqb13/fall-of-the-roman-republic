@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import { Event } from "./data/events";
 import events from "./data/events";
 
@@ -9,17 +9,19 @@ type YearGroup = {
   events: Event[];
 };
 
+const flipped = ref(false);
+
 const colors: string[] = ["#ca5454", "#e8a040", "#fcdd75", "#ebc59c"];
 
 const switchColor = (currentColor: number) => {
-  if (currentColor == colors.length - 1) {
+  if (currentColor === colors.length - 1) {
     return 0;
   } else {
     return currentColor + 1;
   }
 };
 
-const groupedEvents: YearGroup[] = [];
+const groupedEvents = ref<YearGroup[]>([]);
 let eventIndex = 0;
 
 const groupEvents = () => {
@@ -27,21 +29,22 @@ const groupEvents = () => {
   let currentYearGroup: YearGroup = { year: "", color: "", events: [] };
   let currentColor = 3; // to start at first color
 
-  console.log(events.length);
+  const eventsToProcess = flipped.value ? [...events].reverse() : events;
 
-  events.forEach((timelineEvent) => {
+  groupedEvents.value = [];
+
+  eventsToProcess.forEach((timelineEvent) => {
     const year = timelineEvent.date.replace(" BCE", "").replace(" CE", "");
 
-    if (year != currentYear) {
+    if (year !== currentYear) {
       currentYear = year;
       currentColor = switchColor(currentColor);
-      let colorStr = colors[currentColor];
+      const colorStr = colors[currentColor];
       currentYearGroup = { year: year, color: colorStr, events: [] };
-      groupedEvents.push(currentYearGroup);
+      groupedEvents.value.push(currentYearGroup);
     }
 
-    let timelineEventWithIndex = timelineEvent;
-    timelineEventWithIndex.index = eventIndex;
+    const timelineEventWithIndex = { ...timelineEvent, index: eventIndex };
 
     currentYearGroup.events.push(timelineEventWithIndex);
     eventIndex++;
@@ -49,6 +52,22 @@ const groupEvents = () => {
 };
 
 groupEvents();
+
+watch(flipped, () => {
+  groupEvents();
+});
+
+const flip = () => {
+  flipped.value = !flipped.value;
+};
+
+const toTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+const toBottom = () => {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+};
 
 const imageModalVisible = ref(false);
 const imageModalImage = ref("");
@@ -65,28 +84,23 @@ const closeImageModal = () => {
 };
 
 const isMobile = () => {
-  if (
+  return (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
-    )
-  ) {
-    return true;
-  } else {
-    return window.innerWidth < 768;
-  }
+    ) || window.innerWidth < 768
+  );
 };
 
-let scrollProgress = ref(0);
+const scrollProgress = ref(0);
 
 window.addEventListener("scroll", () => {
-  var winScroll = document.documentElement.scrollTop;
-  var height =
+  const winScroll = document.documentElement.scrollTop;
+  const height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
   scrollProgress.value = (winScroll / height) * 100;
 });
 </script>
-
 <template>
   <header class="bg-primary-800 p-10 py-24">
     <section>
@@ -99,7 +113,7 @@ window.addEventListener("scroll", () => {
     :class="[
       `bg-primary-800 opacity-50 h-4 fixed left-0 z-10 top-0 ${
         scrollProgress >= 99.9 ? '' : 'rounded-br-lg'
-      }`,
+      }`
     ]"
     :style="[`width: ${scrollProgress}%;`]"
   />
@@ -252,6 +266,28 @@ window.addEventListener("scroll", () => {
         class="max-w-full max-h-full cursor-pointer object-contain rounded-xl"
       />
     </div>
+  </section>
+  <section
+    class="fixed bottom-8 right-5 bg-background-50 py-2 px-4 rounded-xl drop-shadow-xl flex gap-2 items-center justify-center"
+  >
+    <button
+      @click="flip"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+    >
+      flip
+    </button>
+    <button
+      @click="toTop"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+    >
+      to top
+    </button>
+    <button
+      @click="toBottom"
+      class="bg-primary-800 text-background-50 rounded-full w-8 h-8 flex items-center justify-center"
+    >
+      to bottom
+    </button>
   </section>
   <footer class="flex justify-between px-4 py-2 text-sm shrink-0 bg-background">
     <p>The Fall of the Roman Republic | © 2024</p>
