@@ -73,7 +73,7 @@ const events: Event[] = [
   {
     name: "Gaius Gracchus elected Tribune of the Plebs",
     description:
-      "Gaius Gracchus, the younger brother of Tiberius Gracchus, is elected as a tribune of the plebs. ",
+      "Gaius Gracchus, the younger brother of Tiberius Gracchus, is elected as a tribune of the plebs. This allowed him to propose and enact laws that would benefit the Roman people, particularly the poor and marginalized. Gaius would continue his brother's work in advocating for land reform and other social reforms. However his actions would lead to his own assassination and further political turmoil in Rome.",
     date: "123 BCE",
   },
   {
@@ -101,7 +101,7 @@ const events: Event[] = [
   {
     name: "Germanic tribes invade Roman territory",
     description:
-      "Germanic tribes crossed into Roman territory and defeated Roman armies.",
+      "Germanic tribes crossed into Roman territory and defeated Roman armies. This event allowed for the rise of Gaius Marius, who would later become a prominent Roman consul.",
     date: "113 BCE",
   },
   {
@@ -119,7 +119,7 @@ const events: Event[] = [
   {
     name: "Veterans get land",
     description:
-      "With the help of Lucii Appulei Saturnini, Gaius Marius gave land to the soldiers who had completed military service.",
+      "With the help of Lucii Appulei Saturnini, Gaius Marius gave land to the soldiers who had completed military service. This was a significant change in Roman society, as it allowed for the creation of a professional army and increased the loyalty of the soldiers to their generals. This event also marked the beginning of the end of the Roman Republic, as it increased the power of the military and the generals who commanded it.",
     date: "103 BCE",
   },
   {
@@ -137,7 +137,7 @@ const events: Event[] = [
   {
     name: "Mithridates VI threatens Roman territory",
     description:
-      "Mithridates VI killed 80,000 Roman citizens living in Greece and Asia Minor",
+      "Mithridates VI killed 80,000 Roman citizens living in Greece and Asia Minor. This event led to Sulla marching on Rome to take control of the campaign against Mithridates VI.",
     date: "90 BCE",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Asia_minor_Mithridates.jpg/600px-Asia_minor_Mithridates.jpg",
@@ -155,12 +155,6 @@ const events: Event[] = [
     description:
       "Sulla made a second journey through the gates of Rome, declaring himself dictator. Sulla created a list of rivals who he declared enemies of the Republic, and ordered Romans to kill the people on the list. Additionally he decreased the power of the tribune of the plebs by taking their veto power and preventing them from running for offices again, and increased the power of the senate, by adding 300 senators and giving them the governance of judges.",
     date: "82 BCE",
-  },
-  {
-    name: "Pompey is Victorious",
-    description:
-      "Pompey returns to Rome from his command in Spain after defeating Quintus Sertorius.",
-    date: "71 BCE",
   },
   {
     name: "Pompey becomes consul",
@@ -203,9 +197,15 @@ const events: Event[] = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/First_triumvirate_luca56bc.svg/1920px-First_triumvirate_luca56bc.svg.png",
   },
   {
+    name: "Pompey becomes sole consul",
+    description:
+      "Pompey became the sole consul of Rome after Crassus died in battle in Syria. This event marked the beginning of the end of the First Triumvirate, as tensions between Pompey and Caesar began to rise.",
+    date: "52 BCE",
+  },
+  {
     name: "Caesar crosses the Rubicon",
     description:
-      "Caesar crossed the Rubicon with his army, Pompey fled Rome as Caesar got closer to Rome. This marked the beginning of the civil war between Caesar and Pompey.",
+      "Caesar crossed the Rubicon with his army, Pompey fled Rome as Caesar got closer to Rome. This was beginning of the civil war between Caesar and Pompey.",
     date: "49 BCE",
     image:
       "https://characterlab.org/wp-content/uploads/2022/03/4-3-22-All-In_web-1024x759.png",
