@@ -24,6 +24,8 @@ const switchColor = (currentColor: number) => {
 const groupedEvents = ref<YearGroup[]>([]);
 let eventIndex = 0;
 
+const eventCount = events.length;
+
 const groupEvents = () => {
   let currentYear = "";
   let currentYearGroup: YearGroup = { year: "", color: "", events: [] };
@@ -113,7 +115,7 @@ window.addEventListener("scroll", () => {
     :class="[
       `bg-primary-800 opacity-50 h-4 fixed left-0 z-10 top-0 ${
         scrollProgress >= 99.9 ? '' : 'rounded-br-lg'
-      }`
+      }`,
     ]"
     :style="[`width: ${scrollProgress}%;`]"
   />
@@ -323,6 +325,7 @@ window.addEventListener("scroll", () => {
         />
       </svg>
     </button>
+    <p>{{ eventCount }} events</p>
   </section>
   <footer class="flex justify-between px-4 py-2 text-sm shrink-0">
     <p>The Fall of the Roman Republic | © 2024</p>
