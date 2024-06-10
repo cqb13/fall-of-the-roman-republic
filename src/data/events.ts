@@ -77,7 +77,7 @@ const events: Event[] = [
     date: "123 BCE",
   },
   {
-    name: "First Tribunate of Gaius Gracchus",
+    name: "Tribunate's of Gaius Gracchus",
     description:
       "Gaius started his political career as part of the commission implementing the agrarian reforms initiated by his brother Tiberius. This commission aimed to redistribute public land to Rome's poorer citizens, increasing the number of small landowners. He continued the focus on land reforms by planning and establishing colonies in Italy and re-founding Carthage, aiming to provide land for Rome’s landless citizens. He introduced significant judicial reforms, including the establishment of a permanent court (quaestio de repetundis) to handle cases of extortion by provincial governors. He transferred jury duties from senators to equestrians, seeking to curb corruption. He also implemented a law providing the urban poor with a regular grain supply at subsidized prices, addressing the critical issue of food security in Rome.",
     date: "123 BCE",
@@ -189,7 +189,7 @@ const events: Event[] = [
   {
     name: "The First Triumvirate",
     description:
-      "Pompey, Crassus, and Caesar came together to form the First Triumvirate, a political alliance that allowed them to consolidate power and influence in Rome. The alliance was not officially recognized by the Roman Senate, but it effectively controlled Roman politics for several years. The First Triumvirate was a significant development in Roman history, as it marked the beginning of the end of the Roman Republic and the rise of autocratic rule.",
+      "Pompey, Crassus, and Caesar came together to form the First Triumvirate, a political alliance that allowed them to consolidate power and influence in Rome. The alliance was not officially recognized by the Roman Senate, but it effectively controlled Roman politics for several years.",
     date: "60 BCE",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/5/5e/The_First_Triumvirate_of_the_Roman_Republic_1200X800.jpg",
@@ -213,7 +213,8 @@ const events: Event[] = [
   },
   {
     name: "Caesar declares himself dictator",
-    description: "Caesar declared himself dictator for life.",
+    description:
+      "Caesar declared himself dictator for life. This event played a big role in the fall of the Roman Republic, as it marked the end of the traditional Roman political system and the beginning of autocratic rule.",
     date: "44 BCE",
   },
   {
