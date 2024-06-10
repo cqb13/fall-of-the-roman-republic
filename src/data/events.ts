@@ -216,6 +216,8 @@ const events: Event[] = [
     description:
       "Caesar declared himself dictator for life. This event played a big role in the fall of the Roman Republic, as it marked the end of the traditional Roman political system and the beginning of autocratic rule.",
     date: "44 BCE",
+    image:
+      "https://qph.cf2.quoracdn.net/main-qimg-afa5172974feda662dfce53c08e574c1",
   },
   {
     name: "Caesar is assassinated",
